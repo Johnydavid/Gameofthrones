@@ -21,7 +21,7 @@ tableEle.id = "table";
 
 // Creating Table Head Elements
 const theadEle = document.createElement("thead");
-// theadEle.className = "table-dark";
+
 
 // Creating Table Tr Elements
 const trEle = document.createElement("tr");
