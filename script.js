@@ -40,8 +40,9 @@ theadEle.appendChild(trEle);
 const tbodyEle = document.createElement("tbody");
 
 const innerTr = document.createElement("tr");
+const btnTr = document.createElement("tr");
 
-tbodyEle.append(innerTr);
+tbodyEle.append(innerTr, btnTr);
 
 tableEle.append(theadEle, tbodyEle);
 tableEle.className = "container ";
@@ -140,9 +141,11 @@ const populateTable = (startIndex, endIndex) => {
 
 // Buttons Div
 const btnsDiv = document.createElement("div");
+btnTr.append(btnsDiv)
 
 
-btnsDiv.className = "container sm-12,text-center buttonClass";
+
+btnsDiv.className = " buttonClass";
 
 // Next Button
 const nextBtn = document.createElement("button");
